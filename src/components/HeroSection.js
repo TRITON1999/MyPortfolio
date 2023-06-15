@@ -153,15 +153,6 @@ const HeroSection = () => {
               d
             </span>
             <span className="" onMouseEnter={boldEffect}>
-              i
-            </span>
-            <span className="" onMouseEnter={boldEffect}>
-              n
-            </span>
-            <span className="" onMouseEnter={boldEffect}>
-              g
-            </span>
-            <span className="" onMouseEnter={boldEffect}>
               {" "}
             </span>
             <span className="" onMouseEnter={boldEffect}>

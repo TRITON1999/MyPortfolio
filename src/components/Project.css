@@ -109,6 +109,7 @@ span.project-heading {
   height: 300vh;
   position: relative;
   margin: 0;
+  margin-top: -10vh;
   padding: 0;
 }
 .gsap_practice {

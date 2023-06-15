@@ -93,11 +93,8 @@ const AboutMe = () => {
                 >
                   GitHub
                 </a>
-                You can also Connect via email tripathiakshat675@gmail.com. More
-                details on{" "}
-                <a rel="noreferrer" href="./#contact">
-                  Contact Me
-                </a>
+                You can also Connect via email{" "}
+                <strong>tripathiakshat675@gmail.com</strong>.
               </p>
               <p class="about__content-details-para">
                 I'm open to <strong>Job</strong> opportunities where I can

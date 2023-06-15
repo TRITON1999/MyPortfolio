@@ -110,23 +110,38 @@ class Effect {
     this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
     const imgW = this.canvas.width - 20;
     const imgH = imgW / 2;
-    this.ctx.drawImage(this.image, 10, 10, imgW, imgH);
+
     // this.ctx.fillStyle = "white";
     // this.ctx.fillRect(10, 10, imgW, imgH);
-    this.ctx.fillStyle = "white";
-    this.ctx.textAlign = "center";
-    this.ctx.textBaseline = "center";
-    if (window.innerWidth < 400) {
+
+    if (window.innerWidth < 500) {
+      this.ctx.drawImage(this.image, 10, 10, imgW, imgH);
       let th = imgH + (2 * (this.canvas.height - imgH)) / 5;
-      this.ctx.font = "5rem Bangers";
-      this.ctx.fillText(this.mobile[0], imgW / 2, th);
+      this.ctx.font = "bold 8vw Indie Flower";
+      this.ctx.fillStyle = "white";
+      this.ctx.textAlign = "center";
+      this.ctx.textBaseline = "center";
+      this.ctx.fillText(this.mobile[0], 10 + imgW / 2, th);
       th = imgH + (4 * (this.canvas.height - imgH)) / 5;
-      this.ctx.font = "4.8rem Bangers";
-      this.ctx.fillText(this.mobile[1], imgW / 2, th);
+      this.ctx.font = "bold 8vw Indie Flower";
+      this.ctx.fillStyle = "white";
+      this.ctx.textAlign = "center";
+      this.ctx.textBaseline = "center";
+      this.ctx.fillText(this.mobile[1], 10 + imgW / 2, th);
     } else {
-      const th = imgH + (this.canvas.height - imgH) / 2;
-      this.ctx.font = "7rem Bangers";
-      this.ctx.fillText(this.laptop, imgW / 2, th);
+      const th = this.canvas.height / 2 - imgH / 2;
+      this.ctx.drawImage(
+        this.image,
+        this.canvas.width / 2 - imgW / 2,
+        this.canvas.height / 2 - imgH / 2,
+        imgW,
+        imgH
+      );
+      this.ctx.font = "bold 3.5vw Indie Flower";
+      this.ctx.fillStyle = "white";
+      this.ctx.textAlign = "center";
+      this.ctx.textBaseline = "center";
+      this.ctx.fillText(this.laptop, this.canvas.width / 2, th / 2);
     }
   }
   draw() {
@@ -160,7 +175,11 @@ const MyCanvas = (props) => {
   const cvs = useRef(null);
   const plg = useRef(null);
   const effect = useRef(null);
-  const [distroyText, setDistroyText] = useState("DISTROY");
+
+  const [buttonColor, setButtonColor] = useState({
+    backgroundColor: "#ca150c",
+  });
+  const [distroyText, setDistroyText] = useState("💀");
   //   const [effect, setEffect] = useState(null);
   useEffect(() => {
     const canvas = cvs.current;
@@ -197,16 +216,19 @@ const MyCanvas = (props) => {
           <div>
             <div className="apply-grid">
               <button
+                style={buttonColor}
                 onClick={() => {
-                  if (distroyText === "DISTROY") {
+                  if (distroyText === "💀") {
+                    setButtonColor({ backgroundColor: "#6f9b59" });
                     effect.current.continueAnimation1 = true;
-                    setDistroyText("ASSEMBLE");
+                    setDistroyText("🛠️");
                     effect.current.continueAnimation = false;
                     effect.current.generateImageParticles();
                   }
-                  if (distroyText === "ASSEMBLE") {
+                  if (distroyText === "🛠️") {
+                    setButtonColor({ backgroundColor: "#ca150c" });
                     effect.current.continueAnimation = true;
-                    setDistroyText("DISTROY");
+                    setDistroyText("💀");
                     effect.current.continueAnimation1 = false;
                     effect.current.generateSecondAnimation();
                   }
@@ -215,7 +237,14 @@ const MyCanvas = (props) => {
               >
                 {distroyText}
               </button>
-              <button class="btn ripple-effect">LINK</button>
+              <button
+                onClick={() => {
+                  window.open(props.mobile[2], "_blank", "noreferrer");
+                }}
+                class="btn ripple-effect"
+              >
+                LINK
+              </button>
             </div>
           </div>
         </div>

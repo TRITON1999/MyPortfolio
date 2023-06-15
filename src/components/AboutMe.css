@@ -101,7 +101,7 @@
   height: 100%;
   width: 100%;
   z-index: 4;
-  background-color: #fafa00;
+  background-color: #f6d788;
 }
 .curten-left-a {
   animation: curten-effect-left 0.4s linear forwards;
@@ -113,7 +113,7 @@
   height: 100%;
   width: 100%;
   z-index: 4;
-  background-color: black;
+  background-color: #c69448;
 }
 .curten-left-b-a {
   animation: curten-effect-left 0.4s 0.01s linear forwards;
@@ -125,7 +125,7 @@
   height: 100%;
   width: 100%;
   z-index: 4;
-  background-color: green;
+  background-color: #f9f5e3;
 }
 .curten-left-g-a {
   animation: curten-effect-left 0.4s 0.02s linear forwards;
@@ -137,7 +137,7 @@
   height: 100%;
   width: 100%;
   z-index: 4;
-  background-color: red;
+  background-color: #f6d788;
 }
 .curten-left-r-a {
   animation: curten-effect-left 0.4s 0.015s linear forwards;
@@ -170,7 +170,7 @@
   height: 100%;
   width: 100%;
   z-index: 4;
-  background-color: #fafa00;
+  background-color: #f6d788;
 }
 .curten-right-a {
   animation: curten-effect-right 0.4s linear forwards;
@@ -182,7 +182,7 @@
   height: 100%;
   width: 100%;
   z-index: 4;
-  background-color: green;
+  background-color: #f9f5e3;
 }
 .curten-right-g-a {
   animation: curten-effect-right 0.4s 0.02s linear forwards;
@@ -194,7 +194,7 @@
   height: 100%;
   width: 100%;
   z-index: 4;
-  background-color: red;
+  background-color: #f6d788;
 }
 .curten-right-r-a {
   animation: curten-effect-right 0.4s 0.015s linear forwards;
@@ -206,7 +206,7 @@
   height: 100%;
   width: 100%;
   z-index: 4;
-  background-color: black;
+  background-color: #c69448;
 }
 .curten-right-b-a {
   animation: curten-effect-right 0.4s 0.01s linear forwards;
