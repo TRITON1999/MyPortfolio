@@ -1,0 +1,90 @@
+.flow-of-colors {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  z-index: 1;
+}
+.flow1 {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: yellow;
+}
+.flow2 {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+.flow3 {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: red;
+}
+.flow4 {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: green;
+}
+.flow5 {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: purple;
+}
+
+.flow1anime {
+  animation: srink 1s linear 0.1s forwards;
+}
+.flow2anime {
+  animation: srink 1s linear 0.2s forwards;
+}
+.flow3anime {
+  animation: srink 1s linear 0.3s forwards;
+}
+.flow4anime {
+  animation: srink 1s linear 0.4s forwards;
+}
+.flow5anime {
+  animation: srink 1s linear 0.5s forwards;
+}
+
+.flow5anime-re {
+  animation: expand 1s linear 0.1s forwards;
+}
+.flow4anime-re {
+  animation: expand 1s linear 0.2s forwards;
+}
+.flow3anime-re {
+  animation: expand 1s linear 0.3s forwards;
+}
+.flow2anime-re {
+  animation: expand 1s linear 0.4s forwards;
+}
+.flow1anime-re {
+  animation: expand 1s linear 0.5s forwards;
+}
+
+@keyframes srink {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+@keyframes expand {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}

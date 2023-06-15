@@ -1,0 +1,319 @@
+.contact {
+  background: linear-gradient(
+    to right,
+    rgba(245, 245, 245, 0.8),
+    rgba(245, 245, 245, 0.8)
+  );
+  background-size: cover;
+  background-position: center;
+}
+
+.contact__form-container {
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+  background: #fff;
+  padding: 4rem;
+  margin-top: 6rem;
+  max-width: 80rem;
+  text-align: right;
+  width: 95%;
+  border-radius: 5px;
+  margin: 5rem auto 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .contact__form-container {
+    padding: 3rem;
+  }
+}
+
+.contact__form-field {
+  margin-bottom: 4rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .contact__form-field {
+    margin-bottom: 3rem;
+  }
+}
+
+.contact__form-label {
+  color: #666;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  display: block;
+  text-align: left;
+}
+
+.contact__form-input {
+  color: #333;
+  padding: 2rem;
+  width: 100%;
+  border: 1px solid #ebebeb;
+  font-size: 1.6rem;
+  letter-spacing: 0;
+  background: #f0f0f0;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.contact__form-input::-moz-placeholder {
+  color: #999;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.contact__form-input:-ms-input-placeholder {
+  color: #999;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.contact__form-input::placeholder {
+  color: #999;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.contact__form-input::-webkit-input-placeholder {
+  color: #999;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.contact__form-input:-ms-input-placeholder {
+  color: #999;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.contact__form-input::-ms-input-placeholder {
+  color: #999;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.contact__form-input:-moz-placeholder {
+  opacity: 1;
+  color: #999;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.contact__form-input::-moz-placeholder {
+  opacity: 1;
+  color: #999;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.contact__btn {
+  width: 30%;
+  padding: 2rem 4rem;
+  font-size: 1.6rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .contact__btn {
+    width: 100%;
+  }
+}
+form.contact__form {
+  position: relative;
+  z-index: 3;
+}
+
+/* ---------------- */
+
+.box {
+  position: absolute;
+  height: 10%;
+  width: 10%;
+  left: 0;
+  top: 0;
+  border-radius: 10%;
+  background-color: yellow;
+  animation: horizontal 15s linear infinite, verticle 4s linear infinite;
+  z-index: 2;
+}
+.box-b {
+  position: absolute;
+  border-radius: 10%;
+  height: 10%;
+  width: 10%;
+  left: 0;
+  top: 0;
+  background-color: black;
+  animation: horizontal 15s 0.05s linear infinite,
+    verticle 4s 0.05s linear infinite;
+  z-index: 2;
+}
+.box-r {
+  position: absolute;
+  border-radius: 10%;
+  height: 10%;
+  width: 10%;
+  left: 0;
+  top: 0;
+  background-color: red;
+  animation: horizontal 15s 0.1s linear infinite,
+    verticle 4s 0.1s linear infinite;
+  z-index: 2;
+}
+.box-g {
+  position: absolute;
+  border-radius: 10%;
+  height: 10%;
+  width: 10%;
+  left: 0;
+  top: 0;
+  background-color: green;
+  animation: horizontal 15s 0.15s linear infinite,
+    verticle 4s 0.15s linear infinite;
+  z-index: 2;
+}
+
+@keyframes horizontal {
+  50% {
+    left: calc(90%);
+  }
+}
+@keyframes verticle {
+  50% {
+    top: 90%;
+  }
+}
+
+.box1 {
+  position: absolute;
+  height: 10%;
+  width: 10%;
+  left: 20%;
+  top: 30%;
+  background-color: yellow;
+  animation: horizontal1 15s linear infinite, verticle1 4s linear infinite;
+  z-index: 2;
+}
+.box1-b {
+  position: absolute;
+  height: 10%;
+  width: 10%;
+  left: 20%;
+  top: 30%;
+  background-color: black;
+  animation: horizontal1 15s 0.05s linear infinite,
+    verticle1 4s 0.05s linear infinite;
+  z-index: 2;
+}
+.box1-r {
+  position: absolute;
+  border-radius: 10%;
+
+  height: 10%;
+  width: 10%;
+  left: 20%;
+  top: 30%;
+  background-color: red;
+  animation: horizontal1 15s 0.1s linear infinite,
+    verticle1 4s 0.1s linear infinite;
+  z-index: 2;
+}
+.box1-g {
+  border-radius: 10%;
+
+  position: absolute;
+  height: 10%;
+  width: 10%;
+  left: 20%;
+  top: 30%;
+  background-color: green;
+  animation: horizontal1 15s 0.15s linear infinite,
+    verticle1 4s 0.15s linear infinite;
+  z-index: 2;
+}
+
+@keyframes horizontal1 {
+  30% {
+    left: calc(90%);
+  }
+  75% {
+    left: 0;
+  }
+}
+@keyframes verticle1 {
+  40% {
+    top: 90%;
+  }
+  90% {
+    top: 0;
+  }
+}
+
+.box2 {
+  position: absolute;
+  border-radius: 10%;
+  height: 10%;
+  width: 10%;
+  right: 50%;
+  top: 50%;
+  background-color: yellow;
+  animation: horizontal2 15s linear infinite, verticle2 4s linear infinite;
+  z-index: 2;
+}
+.box2-b {
+  position: absolute;
+  border-radius: 10%;
+  height: 10%;
+  width: 10%;
+  right: 50%;
+  top: 50%;
+  background-color: black;
+  animation: horizontal2 15s 0.05s linear infinite,
+    verticle2 4s 0.05s linear infinite;
+  z-index: 2;
+}
+.box2-r {
+  position: absolute;
+  border-radius: 10%;
+  height: 10%;
+  width: 10%;
+  right: 50%;
+  top: 50%;
+  background-color: red;
+  animation: horizontal2 15s 0.1s linear infinite,
+    verticle2 4s 0.1s linear infinite;
+  z-index: 2;
+}
+.box2-g {
+  position: absolute;
+  border-radius: 10%;
+  height: 10%;
+  width: 10%;
+  right: 50%;
+  top: 50%;
+  background-color: green;
+  animation: horizontal2 15s 0.15s linear infinite,
+    verticle2 4s 0.15s linear infinite;
+  z-index: 2;
+}
+
+@keyframes horizontal2 {
+  20% {
+    right: calc(90%);
+  }
+  70% {
+    right: 0;
+  }
+}
+@keyframes verticle2 {
+  20% {
+    top: calc(90%);
+  }
+  70% {
+    top: 0;
+  }
+}
+/* End square */

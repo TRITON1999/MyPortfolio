@@ -1,0 +1,88 @@
+.MyCanvas {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: antiquewhite; */
+  font-family: "Bangers";
+}
+button {
+  margin: 0;
+  padding: 0;
+}
+.MyCanvasGridField {
+  height: 100%;
+  width: 80%;
+  /* background-color: aqua; */
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  border-radius: 5px;
+  border: 2px yellow solid;
+}
+.my-canvas-playfield {
+  /* background-color: bisque; */
+  height: 100%;
+  width: 100%;
+}
+.my-canvas {
+  /* background-color: aquamarine; */
+  width: 100%;
+  height: 100%;
+}
+.images {
+  /* position: relative;
+    z-index: 5;
+    margin: 0;
+    padding: 0;
+    width: 80vw; */
+  display: none;
+}
+
+.my-canvas-controller {
+  /* background-color: black; */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.my-canvas-controller button {
+  padding: 0.5rem 5rem;
+  margin: 1rem;
+  font-size: 5rem;
+}
+.apply-grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+@media (max-width: 56.25em) {
+  .MyCanvasGridField {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+  }
+  .MyCanvas {
+    padding-bottom: 50px;
+    font-size: 2rem;
+  }
+  .my-canvas-controller button {
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+  }
+  .apply-grid {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  .my-canvas {
+    margin-left: -30px;
+    width: 100vw;
+  }
+  .my-canvas-controller {
+    margin-left: -30px;
+  }
+}

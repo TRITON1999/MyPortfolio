@@ -1,0 +1,243 @@
+.about {
+  background: #fafafa;
+  overflow: hidden;
+}
+
+.about__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .about__content {
+    grid-template-columns: 1fr;
+    grid-gap: 8rem;
+  }
+}
+
+.about__content-title {
+  font-weight: 700;
+  font-size: 2.8rem;
+  margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .about__content-title {
+    font-size: 2.4rem;
+  }
+}
+
+.about__content-details-para {
+  font-size: 1.8rem;
+  color: #666;
+  max-width: 60rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 3;
+}
+
+.about__content-details-para--hl {
+  font-weight: 700;
+  margin: 0 3px;
+}
+
+.about__content-details-para:last-child {
+  margin-bottom: 4rem;
+}
+
+.about__content-details-para a {
+  text-decoration: underline;
+  font-weight: 700;
+  color: #facf0f;
+  margin: 0 3px;
+}
+
+.main-container {
+  max-width: 120rem;
+  margin: auto;
+  width: 92%;
+}
+.sec-pad {
+  padding: 12rem 0;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .sec-pad {
+    padding: 8rem 0;
+  }
+}
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+.skills__skill:hover {
+  background-color: #fafa00;
+  color: black;
+  font-weight: 800;
+  box-shadow: 10px 10px 10px white;
+}
+
+.skills__skill {
+  position: relative;
+  z-index: 3;
+  padding: 1rem 2rem;
+  margin-bottom: 1.5rem;
+  margin-right: 1.5rem;
+  font-size: 1.6rem;
+  background: rgb(234, 234, 234);
+  border-radius: 5px;
+  font-weight: 600;
+  color: #666;
+}
+.about__content-main {
+  position: relative;
+}
+.curten-left {
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 4;
+  background-color: #fafa00;
+}
+.curten-left-a {
+  animation: curten-effect-left 0.4s linear forwards;
+}
+.curten-left-b {
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 4;
+  background-color: black;
+}
+.curten-left-b-a {
+  animation: curten-effect-left 0.4s 0.01s linear forwards;
+}
+.curten-left-g {
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 4;
+  background-color: green;
+}
+.curten-left-g-a {
+  animation: curten-effect-left 0.4s 0.02s linear forwards;
+}
+.curten-left-r {
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 4;
+  background-color: red;
+}
+.curten-left-r-a {
+  animation: curten-effect-left 0.4s 0.015s linear forwards;
+}
+
+@keyframes curten-effect-left {
+  50% {
+    left: -100%;
+    top: 20%;
+    height: 60%;
+    width: 60%;
+    z-index: 2;
+  }
+  100% {
+    left: 30%;
+    top: 10%;
+    height: 80%;
+    width: 80%;
+    z-index: 2;
+  }
+}
+.about__content-skills {
+  position: relative;
+  z-index: 3;
+}
+.curten-right {
+  top: 0;
+  right: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 4;
+  background-color: #fafa00;
+}
+.curten-right-a {
+  animation: curten-effect-right 0.4s linear forwards;
+}
+.curten-right-g {
+  top: 0;
+  right: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 4;
+  background-color: green;
+}
+.curten-right-g-a {
+  animation: curten-effect-right 0.4s 0.02s linear forwards;
+}
+.curten-right-r {
+  top: 0;
+  right: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 4;
+  background-color: red;
+}
+.curten-right-r-a {
+  animation: curten-effect-right 0.4s 0.015s linear forwards;
+}
+.curten-right-b {
+  top: 0;
+  right: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 4;
+  background-color: black;
+}
+.curten-right-b-a {
+  animation: curten-effect-right 0.4s 0.01s linear forwards;
+}
+@keyframes curten-effect-right {
+  50% {
+    right: -100%;
+    top: 20%;
+    height: 60%;
+    width: 60%;
+    z-index: 2;
+  }
+  100% {
+    right: 30%;
+    top: 10%;
+    height: 80%;
+    width: 80%;
+    z-index: 2;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .curten-right-a {
+    animation: curten-effect-left 0.4s linear forwards;
+  }
+  .curten-right-b-a {
+    animation: curten-effect-left 0.4s 0.005s linear forwards;
+  }
+  .curten-right-r-a {
+    animation: curten-effect-left 0.4s 0.01s linear forwards;
+  }
+  .curten-right-g-a {
+    animation: curten-effect-left 0.4s 0.015s linear forwards;
+  }
+}
