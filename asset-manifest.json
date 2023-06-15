@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.21bf07cd.css",
+    "main.js": "/static/js/main.07153715.js",
+    "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
+    "static/media/Bangers-Regular.ttf": "/static/media/Bangers-Regular.0e89a2279da24d283991.ttf",
+    "static/media/me.jpg": "/static/media/me.c8af7070877ebe7c9eae.jpg",
+    "index.html": "/index.html",
+    "main.21bf07cd.css.map": "/static/css/main.21bf07cd.css.map",
+    "main.07153715.js.map": "/static/js/main.07153715.js.map",
+    "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.21bf07cd.css",
+    "static/js/main.07153715.js"
+  ]
+}
